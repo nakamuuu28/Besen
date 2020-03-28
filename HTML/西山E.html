@@ -1,0 +1,56 @@
+<!DOCTYPE>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <title>購入画面</title>
+  <link rel="stylesheet" href="./css/ccc.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+</head>
+<body>
+    <div class="slide-wrapper">
+      <h2 class="slide-title">ノータックスラックス</h2>
+      <div class="change-btn-wrapper">
+        <div class="change-btn prev-btn">←前へ</div>
+        <div class="change-btn next-btn">次へ→</div>
+      </div>
+      <ul class="slides">
+        <li class="slide active"><img src="./picture/西山E1.jpg" width="250px" height="250px"></li>
+        <li class="slide"><img src="./picture/西山E2.jpg" width="250px" height="250px"></li>
+        <li class="slide"><img src="./picture/西山E3.jpg" width="250px" height="250px"></li>
+      </ul>
+      <div class="index-btn-wrapper">
+        <div class="index-btn">1</div>
+        <div class="index-btn">2</div>
+        <div class="index-btn">3</div>
+        <!-- <div class="index-btn">4</div>
+        <div class="index-btn">5</div> -->
+      </div>
+    </div>
+    <div class="container">
+      <h3 class="section-title">注文</h3>
+      <div class="section-content">
+        <form id="form" class="form">
+            <div class="form-group">
+              <div>サイズ：</div>
+              <select id="select-size" class="select-size">
+                <option value="">選択してください</option>
+                <!-- <option value="S">S</option> -->
+                <option value="M">M</option>
+                <option value="L">L</option>
+                <!-- <option value="XL">XL</option> -->
+              </select>
+            </div>
+          </div>
+          <button type="submit" class="btn-submit">送信</button>
+        </form>
+        <div class="output-wrapper">
+          <h4>確認画面</h4>
+          <div class="output-inner">
+            <p class="output-item">サイズ：<span id="output-size"></span></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  <script type="text/javascript" src="./js/ccc.js"></script>
+</body>
+</html>
